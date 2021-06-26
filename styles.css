@@ -58,6 +58,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    text-align: center;
     width: 100%;
     height: 100vh;
     background-image: linear-gradient( 62deg, #c0f1ff 0%, #8592CE 100%);
@@ -109,16 +110,16 @@ body {
 .project-block {
     display: flex;
     flex-direction: column;
-    background-color: #0b0e1c;
-    color: white;
+    background-color: #ffd0c7;
+    color: black;
     text-decoration: none;
     transition: .3s all ease-in-out;
     /*https://codepen.io/0guzhan/pen/oaOGgv*/
 }
 
 .project-block:hover {
-    background-color: #8592CE;
-    box-shadow: 0px 0px 15px #5373ff;
+    background-color: #ffecc7;
+    box-shadow: 0px 0px 15px #f0ba50;
     transition: .3s all ease-in-out;
 }
 
@@ -144,6 +145,7 @@ body {
     width: 5.25rem;
     border-radius: 5px;
     border: 1px solid;
+    color: white;
 }
 
 .Handlebars {
@@ -174,6 +176,7 @@ body {
 #letswork {
     font-size: 50px;
     font-weight: 500;
+    text-align: center;
 }
 
 #links {
@@ -193,6 +196,51 @@ body {
 
 .contact-link:hover {
     font-size: 40px;
-    text-shadow: 0px 0px 30px #5373ff;
+    text-shadow: 0px 0px 30px #f0ba50;
     transition: .3s all ease-in-out;
+}
+
+@media (max-width: 1024px) {
+    #project-grid {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto auto auto;
+    }
+}
+
+@media (max-width: 768px) {
+    #links {
+        width: 100%;
+    }
+    .code-use {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(auto);
+    }
+    .code {
+        margin-left: 25%;
+    }
+}
+
+@media (max-width: 425px) {
+    #project-grid {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(auto);
+    }
+    #links {
+        flex-direction: column;
+        margin-top: 40px;
+    }
+}
+
+@media (max-width: 375px) {
+    #projects {
+        padding-left: 0;
+        padding-right: 0;
+    }
+}
+
+@media (max-width: 320px) {
+    .code {
+        margin-left: 20%;
+    }
 }
