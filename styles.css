@@ -107,7 +107,7 @@ body {
     margin: 20px;
 }
 
-.project-block {
+.project-tile {
     display: flex;
     flex-direction: column;
     background-color: #ffd0c7;
@@ -117,7 +117,7 @@ body {
     /*https://codepen.io/0guzhan/pen/oaOGgv*/
 }
 
-.project-block:hover {
+.project-tile:hover {
     background-color: #ffecc7;
     box-shadow: 0px 0px 15px #f0ba50;
     transition: .3s all ease-in-out;
@@ -187,14 +187,14 @@ body {
     height: 40px;
 }
 
-.contact-link {
+.profile-link {
     color: black;
     text-decoration: none;
     font-size: 30px;
     transition: .3s all ease-in-out;
 }
 
-.contact-link:hover {
+.profile-link:hover {
     font-size: 40px;
     text-shadow: 0px 0px 30px #f0ba50;
     transition: .3s all ease-in-out;
