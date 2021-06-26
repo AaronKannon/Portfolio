@@ -27,15 +27,24 @@ body {
     margin: 0;
     padding: 0;
     list-style-type: none;
+    height: 100%;
+    align-items: center;
 }
 
 .nav-link {
     padding: 0 20px 0 20px;
     font-size: 20px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    transition: .2s all ease-in-out;
+    cursor: pointer;
 }
 
 .nav-link:hover {
     background-color: #c0f1ff;
+    color: black;
+    transition: .2s all ease-in-out;
 }
 
 .link-menu {
@@ -43,7 +52,8 @@ body {
     text-decoration: none;
 }
 
-#welcome-section {
+#welcome-section,
+#contact {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -81,7 +91,11 @@ body {
 #projects {
     text-align: center;
     padding: 2rem 2rem;
-    background: white;
+    background: #c7f6ff;
+}
+
+#titleproject {
+    font-size: 30px;
 }
 
 #project-grid {
@@ -95,10 +109,17 @@ body {
 .project-block {
     display: flex;
     flex-direction: column;
-    background-color: darkblue;
-    /*height: fit-content;*/
+    background-color: #0b0e1c;
     color: white;
     text-decoration: none;
+    transition: .3s all ease-in-out;
+    /*https://codepen.io/0guzhan/pen/oaOGgv*/
+}
+
+.project-block:hover {
+    background-color: #8592CE;
+    box-shadow: 0px 0px 15px #5373ff;
+    transition: .3s all ease-in-out;
 }
 
 .project-image {
@@ -148,4 +169,30 @@ body {
 .HTML {
     background-color: #A23115;
     border-color: #e34c26;
+}
+
+#letswork {
+    font-size: 50px;
+    font-weight: 500;
+}
+
+#links {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 70%;
+    height: 40px;
+}
+
+.contact-link {
+    color: black;
+    text-decoration: none;
+    font-size: 30px;
+    transition: .3s all ease-in-out;
+}
+
+.contact-link:hover {
+    font-size: 40px;
+    text-shadow: 0px 0px 30px #5373ff;
+    transition: .3s all ease-in-out;
 }
